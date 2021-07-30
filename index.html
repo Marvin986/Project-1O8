@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Hand Gesture App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container1">
+    <center>
+      <div>
+      <button onclick="how_can_this_work()" style="float: left;" class="btn btn-link">How This Can Work</button>
+    </div>
+      <div>
+      <button class="btn btn-danger header">GESTURE WEB APP
+        <br>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#128406;</span>
+        <span>&#128078;</span>
+        <span>&#128079;</span>
+      </button>
+    </div>
+   <h2 style="font-style: italic; color: tan;">Take a Selfie of a Gesture to know about it's Meaning</h2>
+   <h3 style="font-style: italic; color: tomato;">On the Following Gesture the Model is trained - </h3>
+   <div>
+     <sup>
+     <h1>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#128078;</span>
+        <span>&#128079;</span>
+        <span>&#129304;</span>
+      </h1>
+    </sup> 
+    </div>
+    </center>
+  </div>
+  <div class="container2">
+   <div style="text-align: center;" class="one"> 
+    <label class="label">Webcam View - </label>
+    <div id="camera"></div>
+    <button onclick="take_snapshot();" class="Capture">Capture Image</button>
+  </div> 
+
+  <div style="text-align: center;" class="two">
+      <label class="pre_label">Prediction - </label>
+      <p style="font-size: 40px; color: tomato;" class="prediction_name" id="result_prediction_name"></p>
+        <p style="font-size: 35px; color: tan;" id="prediction_photo"></p>
+  </div> 
+  <div style="text-align: center;" class="three">
+    <label style="margin-left: 10px;" class="label">Snapshot - </label>
+    <div id="result"></div>
+    <button style="margin-right: 180px;" onclick="check();" class="Predict">Predict Gesture</button>
+     </div>   
+<script src="main.js"></script>
+
+  </body>
+</html>
